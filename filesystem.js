@@ -8,4 +8,15 @@ console.log(text);
 //reading from the filesystem - gulp and grunt do this
 //can't do this on client-side
 //manipulate and change files
+//stream of information from reading the file - Buffer
 
+// Async
+//readFile takes longer to go out and execute so move on console.log function
+fs.readFile('helloworld.txt', function (err, text){ //text is callback function
+  if (err) {
+    throw err;
+  }
+  console.log(text);
+});
+
+console.log("We're done programming");
