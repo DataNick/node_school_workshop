@@ -1,5 +1,6 @@
 var fs = require( 'fs' );
 
+//Sync - blocking
 var text = fs.readFileSync('helloworld.txt', 'utf-8');
 console.log(text);
 

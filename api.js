@@ -1,5 +1,5 @@
 
-var request = require('request');
+var request = require('request'); //http module
 
 request('http://google.com', function(err, response, body){ // request.get returns a promise; end passes in a callback function
   // replace google.com with another api you want to hit
